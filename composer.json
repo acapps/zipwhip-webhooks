@@ -14,5 +14,10 @@
             "name": "Alan Capps",
             "email": "AlanCapps@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+      "psr-4": {
+        "acapps\\zipwhip-webhooks": "/src"
+      }
+    }
 }
