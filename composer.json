@@ -1,0 +1,18 @@
+{
+    "name": "acapps/zipwhip-webhooks",
+    "description": "Library for parsing Zipwhip Web Hooks in PHP.",
+    "type": "library",
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alan Capps",
+            "email": "AlanCapps@gmail.com"
+        }
+    ]
+}
