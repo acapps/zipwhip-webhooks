@@ -436,19 +436,43 @@ class Message extends Model implements \JsonSerializable
     }
 
     /**
-     * @return \DateTime
-     */
-    public function getDateCreated()
-    {
-        return $this->dateCreated;
-    }
-
-    /**
      * @return string
      */
     public function getDateCreatedAsString()
     {
         return $this->dateToString($this->dateCreated);
+    }
+
+    /**
+     * @return string
+     */
+    public function getDateDeletedAsString()
+    {
+        return $this->dateToString($this->dateDeleted);
+    }
+
+    /**
+     * @return string
+     */
+    public function getDateReadAsString()
+    {
+        return $this->dateToString($this->dateRead);
+    }
+
+    /**
+     * @return string
+     */
+    public function getScheduledDateAsString()
+    {
+        return $this->dateToString($this->scheduledDate);
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateCreated()
+    {
+        return $this->dateCreated;
     }
 
     /**
@@ -479,14 +503,6 @@ class Message extends Model implements \JsonSerializable
     }
 
     /**
-     * @return string
-     */
-    public function getDateDeletedAsString()
-    {
-        return $this->dateToString($this->dateDeleted);
-    }
-
-    /**
      * @param \DateTime $dateDeleted
      */
     public function setDateDeleted(\DateTime $dateDeleted)
@@ -514,14 +530,6 @@ class Message extends Model implements \JsonSerializable
     }
 
     /**
-     * @return string
-     */
-    public function getDateReadAsString()
-    {
-        return $this->dateToString($this->dateRead);
-    }
-
-    /**
      * @param \DateTime $dateRead
      */
     public function setDateRead(\DateTime $dateRead)
@@ -546,14 +554,6 @@ class Message extends Model implements \JsonSerializable
     public function getScheduledDate()
     {
         return $this->scheduledDate;
-    }
-
-    /**
-     * @return string
-     */
-    public function getScheduledDateAsString()
-    {
-        return $this->dateToString($this->scheduledDate);
     }
 
     /**
