@@ -23,12 +23,15 @@
  */
 
 
-namespace acapps\converters;
+namespace acapps\webhooks\converters;
 
 
-use acapps\Loggable;
-use acapps\models\Message;
+use acapps\webhooks\models\Message;
 
+/**
+ * Class JsonToMessage
+ * @package acapps\webhooks\models\Message
+ */
 trait JsonToMessage
 {
     public function parseMessage($json, Message $message)

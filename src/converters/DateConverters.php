@@ -22,12 +22,12 @@
  * SOFTWARE. OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace acapps\converters;
+namespace acapps\webhooks\converters;
 
 
 /**
  * Class DateConverters
- * @package acapps\converters
+ * @package acapps\webhooks\converters
  */
 trait DateConverters
 {

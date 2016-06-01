@@ -22,11 +22,15 @@
  * SOFTWARE. OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace acapps;
+namespace acapps\webhooks;
 
 
-use acapps\converters\DateConverters;
+use acapps\webhooks\converters\DateConverters;
 
+/**
+ * Class DateConvertersTest
+ * @package acapps\webhooks
+ */
 class DateConvertersTest extends \PHPUnit_Framework_TestCase
 {
     use DateConverters;

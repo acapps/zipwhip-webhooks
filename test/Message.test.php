@@ -25,8 +25,12 @@
 namespace acapps;
 
 
-use acapps\models\Message;
+use acapps\webhooks\models\Message;
 
+/**
+ * Class MessageTest
+ * @package acapps
+ */
 class MessageTest extends \PHPUnit_Framework_TestCase
 {
     const exampleInput = '{"body":"Test body","bodySize":9,"visible":true,"hasAttachment":false,"dateRead":"2016-05-24T20:42:06-07:00","bcc":null,"finalDestination":"4257772300","messageType":"ZO","deleted":false,"statusCode":6,"id":453714974911832064,"scheduledDate":null,"fingerprint":"8982349","messageTransport":5,"contactId":2428978123,"address":"ptn:/4257772300","read":true,"dateCreated":"2016-05-24T20:42:06-07:00","dateDeleted":null,"dateDelivered":null,"cc":null,"finalSource":"8448982526","deviceId":314450216}';
@@ -37,7 +41,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
     {
         $message = new Message();
 
-        $this->assertInstanceOf('acapps\models\Model', $message);
+        $this->assertInstanceOf('acapps\webhooks\models\Model', $message);
     }
 
     public function testEmptyMessagePayloadAsJson()

@@ -22,11 +22,11 @@
  * SOFTWARE. OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace acapps\models;
+namespace acapps\webhooks\models;
 
 /**
  * Class Model
- * @package acapps\models
+ * @package acapps\webhooks\models
  */
 abstract class Model
 {

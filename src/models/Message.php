@@ -22,15 +22,15 @@
  * SOFTWARE. OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace acapps\models;
+namespace acapps\webhooks\models;
 
-use acapps\converters\DateConverters;
-use acapps\converters\JsonToMessage;
+use acapps\webhooks\converters\DateConverters;
+use acapps\webhooks\converters\JsonToMessage;
 
 
 /**
  * Class Message
- * @package acapps\models
+ * @package acapps\webhooks\models
  */
 class Message extends Model implements \JsonSerializable
 {
